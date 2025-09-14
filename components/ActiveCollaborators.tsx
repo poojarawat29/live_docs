@@ -1,5 +1,5 @@
 import { useOthers } from '@liveblocks/react/suspense'
-import Image from 'next/image';
+import Image from 'next/image'
 
 const ActiveCollaborators = () => {
   const others = useOthers();
@@ -10,8 +10,7 @@ const ActiveCollaborators = () => {
     <ul className="collaborators-list">
       {collaborators.map(({ id, avatar, name, color }) => (
         <li key={id}>
-          <Image 
-            src={avatar}
+          <Image  src={avatar}
             alt={name}
             width={100}
             height={100}
